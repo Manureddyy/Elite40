@@ -1,31 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-/*.parent{
-    width: 800px;
-    height: 300px;
-    background-color: grey;
-    position: relative;
+
+ul.parent {
+  list-style: none;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }
-.child{
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}*/
-.container .content p:nth-child(1){
-    color: red;
+ul.parent li {
+  position: relative;
 }
-.container .content p:nth-child(2){
-    color:black;
+ul.parent li a {
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
 }
-.container .main p:nth-child(1){
-    color:purple;
+ul.parent li a:hover {
+  color: tomato;
 }
-.container .main p:nth-child(2){
-    color: yellow;
+ul.parent li ul {
+  list-style: none;
+  position: absolute;
+  display: none;
+  width: 100px;
+  top: 30px;
 }
+ul.parent li:hover ul {
+  display: block;
+}
+
+.header {
+  background-color: black;
+}
+.header img {
+  height: 100px;
+  width: 100%;
+}
+
+.container .products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .products li {
+  list-style: none;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.container .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+.container .products li:hover ul {
+  display: block;
+}
+.container .products li img {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  left: 50px;
+  bottom: 40px;
+}
+.container .products li p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}/*# sourceMappingURL=style.css.map */
